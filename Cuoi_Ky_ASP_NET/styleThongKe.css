@@ -1,0 +1,45 @@
+﻿body {
+}
+
+.drop {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    padding: 10px 10px;
+    width: 270px;
+    height: 55px;
+    outline: none;
+    color: black;
+    /*border-radius: 24px;*/
+    transition: 0.25s;
+    font-family: Cambria;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 1px 1px 1px 1px #3498db;
+}
+
+.btn {
+    border: 0;
+    background: #135ea4;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #135ea4;
+    padding: 14px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.60s;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: Cambria;
+    font-size: 15px;
+    width: 170px;
+}
+
+.btn:hover {
+    background: #3498db;
+    width: 200px;
+}

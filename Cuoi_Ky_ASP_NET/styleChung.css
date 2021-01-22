@@ -1,0 +1,363 @@
+﻿body {
+    font-family: Cambria;
+    font-size: 18px;
+}
+/*trang master*/
+
+.form1 {
+    height: 500px;
+    border: 2px solid #135ea4;
+    box-shadow: 3px 3px 3px 3px #3498db;
+    margin: 0px auto;
+    background: white;
+    font-size: 15px;
+}
+
+.menu {
+    text-transform: uppercase;
+}
+
+.navbar {
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.25);
+}
+
+.menu-main {
+    display: flex;
+    width: 100%;
+    padding: 0px;
+}
+
+.menu-items {
+    list-style: none;
+    /*flex: 1;*/
+    cursor: pointer;
+    /*user-select: none;*/
+    position: relative;
+    padding: 10px;
+}
+
+    .menu-items:hover {
+        color: #04097d;
+        /*color: #660099;*/
+        font-weight: 600;
+        border-bottom: 5px solid;
+        transition: color 0.3s ease;
+    }
+
+    .menu-items:focus {
+        color: #04097d;
+        font-weight: 600;
+        border-bottom: 5px solid;
+        transition: color 0.3s ease;
+    }
+
+    .menu-items:hover a {
+        color: #04097d;
+        /*color: #660099;*/
+    }
+
+.menu-main li a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.menu-main1 {
+    display: none;
+    position: absolute;
+    padding: 15px;
+    margin-top: 15px;
+    background: white;
+    left: -1px;
+    width: 250px;
+}
+
+.menu-main a {
+    text-transform: uppercase;
+    font-family: segoe ui light;
+    font-weight: bold;
+}
+
+.menu-main1 li {
+    width: 180px;
+    height: 30px;
+    margin-top: 5px;
+    list-style: none;
+    width: 250px;
+}
+
+.menu-items1:hover a {
+    color: #135ea4;
+    font-weight: 300;
+    transition: color 0.3s ease;
+}
+
+.menu-items:hover .menu-main1 {
+    display: block;
+}
+
+/*trang đăng nhập*/
+.bg-img {
+    background: url(dai-hoc-quy-nhon-1.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+    .bg-img::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(0,0,0,0.2);
+    }
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*background:rgba(255,255,255,0.2);*/
+    background: white;
+    box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
+    z-index: 999;
+    width: 400px;
+    text-align: center;
+    /*color:white;*/
+}
+
+.anh2 {
+    width: 100px;
+    height: 100px;
+}
+
+.anh1 {
+    width: 70px;
+    height: 70px;
+}
+
+/*.bg-img1 {
+    background: url(anh4.jpg);
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.bg-img1::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.2);
+}
+.content1 {
+    position: absolute;
+    z-index: 999;
+}*/
+
+/*style chung thẻ input*/
+.text {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 10px auto;
+    /*text-align: center;*/
+    padding: 10px 10px;
+    width: 300px;
+    height: 35px;
+    outline: none;
+    color: black;
+    /*border-radius: 24px;*/
+    transition: 0.25s;
+    font-family: Cambria;
+    font-size: 15px;
+    font-weight: bold;
+    /*box-shadow: 1px 1px 10px 1px #808080;*/
+    box-shadow: 1px 1px 4px 1px #3498db;
+}
+
+.btn {
+    background: #135ea4;
+    /*background: #4a3c8c;*/
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #135ea4;
+    padding: 14px;
+    outline: none;
+    color: white;
+    border-radius: 10px;
+    transition: 0.60s;
+    cursor: pointer;
+    font-weight: bold;
+    width: 120px;
+    height: 50px;
+}
+
+.btn1 {
+    margin-left: 10px;
+}
+
+.btn2 {
+    margin-right: 55px
+}
+
+.btn3 {
+    background: #135ea4;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #135ea4;
+    padding: 10px;
+    outline: none;
+    color: white;
+    border-radius: 10px;
+    transition: 0.60s;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100px;
+    height: 40px;
+}
+
+.btn3:hover {
+    background: #3498db;
+    width: 110px;
+}
+
+.btn:hover {
+    background: #3498db;
+    width: 150px;
+}
+
+
+.text:focus {
+    width: 320px;
+    border-color: #2ecc71;
+}
+
+.textTimKiem {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    /*margin-left: 0px;*/
+    /*text-align: center;*/
+    padding: 10px 10px;
+    width: 300px;
+    height: 35px;
+    outline: none;
+    color: black;
+    /*border-radius: 24px;*/
+    transition: 0.25s;
+    /*box-shadow: 1px 1px 1px 1px #808080;*/
+    box-shadow: 1px 1px 1px 1px #3498db;
+    font-weight: bold;
+}
+
+.textTimKiem:focus {
+    width: 350px;
+    border-color: #2ecc71;
+}
+
+.drop {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    padding: 10px 10px;
+    width: 320px;
+    height: 55px;
+    outline: none;
+    color: black;
+    /*border-radius: 24px;*/
+    transition: 0.25s;
+    font-family: Cambria;
+    font-size: 15px;
+    font-weight: bold;
+    /*box-shadow: 1px 1px 1px 1px #808080;*/
+    box-shadow: 1px 1px 4px 1px #3498db;
+}
+
+.chonFile {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    padding: 10px 10px;
+    width: 300px;
+    /*height: 55px;*/
+    outline: none;
+    color: black;
+    /*border-radius: 24px;*/
+    transition: 0.25s;
+    font-weight: bold;
+    /*box-shadow: 1px 1px 1px 1px #808080;*/
+    box-shadow: 1px 1px 1px 1px #3498db;
+}
+
+/*.text1:focus {
+    width: 300px;
+    border-color: #2ecc71;
+}*/
+
+.drop1 {
+    text-decoration: none;
+}
+
+.hienthi {
+    max-width: 700px;
+    width: 90%;
+    padding: 5px 5px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.textSV {
+    font-size: 18px;
+    color: gray;
+}
+
+.datepicker {
+}
+
+.form-ChinhsuaSV {
+    display: flex;
+    justify-content: center;
+}
+
+.sinhvien-GT {
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+.text1 {
+    margin-right: 10px;
+}
+/*trang chi tiết tình trạng học*/
+.tinhtrang {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    border: 1px solid #04097d;
+    margin: 10px 0px;
+    box-shadow: 1px 2px 10px 0px rgba(0,0,0,0.25);
+}
+
+.lblTong {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.lbl {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}

@@ -1,0 +1,28 @@
+﻿body {
+}
+
+.row {
+    overflow: auto;
+    margin: 1.5em auto;
+}
+
+.row {
+    overflow: auto;
+    margin: 1.5em auto;
+}
+
+.row .col {
+    float: left;
+    width: 31.3333%;
+    margin-right: 2.99%;
+}
+
+.row .col:last-child {
+    float: right;
+    margin-right: 0;
+}
+
+.row .col img {
+    float: left;
+    margin-right: 1em;
+}

@@ -1,0 +1,88 @@
+﻿body {
+    font-family: Cambria;
+    font-size: 15px;
+    font-weight: bold;
+    background: #DCDCDC;
+}
+
+.form1 {
+    height: 500px;
+    border: 2px solid #135ea4;
+    box-shadow: 3px 3px 3px 3px #3498db;
+    margin: 0px auto;
+    background: white;
+}
+
+
+
+.btn {
+    border: 0;
+    background: #135ea4;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #135ea4;
+    padding: 14px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.60s;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: Cambria;
+    font-size: 15px;
+    width: 220px;
+}
+
+    .btn:hover {
+        background: #3498db;
+        width: 270px;
+    }
+
+.text {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    padding: 10px 10px;
+    width: 250px;
+    height: 25px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s;
+    font-family: Cambria;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 1px 1px 1px 1px #3498db;
+}
+
+    .text:focus {
+        width: 280px;
+        border-color: #2ecc71;
+    }
+
+.drop {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    padding: 10px 10px;
+    width: 250px;
+    height: 55px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s;
+    font-family: Cambria;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 1px 1px 1px 1px #3498db;
+}
+
+    .drop:focus {
+        width: 280px;
+        border-color: #2ecc71;
+    }

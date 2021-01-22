@@ -1,0 +1,60 @@
+﻿
+.dropKhoaHoc {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    padding: 10px 10px;
+    width: 150px;
+    height: 55px;
+    outline: none;
+    color: black;
+    /*border-radius: 24px;*/
+    transition: 0.25s;
+    font-family: Cambria;
+    font-size: 15px;
+    font-weight: bold;
+    /*box-shadow: 1px 1px 1px 1px #808080;*/
+    box-shadow: 1px 1px 4px 1px #3498db;
+}
+
+.dropNganh{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    padding: 10px 10px;
+    width: 280px;
+    height: 55px;
+    outline: none;
+    color: black;
+    /*border-radius: 24px;*/
+    transition: 0.25s;
+    font-family: Cambria;
+    font-size: 15px;
+    font-weight: bold;
+    /*box-shadow: 1px 1px 1px 1px #808080;*/
+    box-shadow: 1px 1px 4px 1px #3498db;
+}
+
+.dropLop {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    padding: 10px 10px;
+    width: 280px;
+    height: 55px;
+    outline: none;
+    color: black;
+    /*border-radius: 24px;*/
+    transition: 0.25s;
+    font-family: Cambria;
+    font-size: 15px;
+    font-weight: bold;
+    /*box-shadow: 1px 1px 1px 1px #808080;*/
+    box-shadow: 1px 1px 4px 1px #3498db;
+}

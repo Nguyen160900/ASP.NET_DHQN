@@ -1,0 +1,109 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="TrangChung.master.cs" Inherits="Cuoi_Ky_ASP_NET.TrangChung" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="styleChung.css"/>
+</head>
+<body>
+    <style>
+       
+
+        .chantrang {
+            font-family: Cambria;
+            font-size: 16px;
+            color: black;
+            background:#d5dadf;
+            display: flex;
+            border-top: 1px solid #968a8a;
+            padding: 10px 0px;
+            margin: 10px 0px;
+        }
+
+        .chantrang1 {
+            margin-left: 100px;
+            padding: 25px;
+        }
+    </style>
+        <div style="display:flex;justify-content: center;" class="navbar">
+             <asp:Image CssClass="anh1" ID="Image1" runat="server" ImageUrl="dh-qn.jpg"/>     
+            <div style="display: grid;justify-content: space-around;" >                   
+                <ul class="menu-main">                      
+                     <li class="menu-items">
+                        <asp:HyperLink CssClass="menu" ID="LinkTrangChu" runat="server" NavigateUrl="TrangChu.aspx">Trang chủ</asp:HyperLink>
+                    </li>
+                    <li class="menu-items">
+                        <asp:HyperLink CssClass="menu" ID="LinkKhoa" runat="server" NavigateUrl="Khoa.aspx">Khoa</asp:HyperLink>
+                    </li>
+                    <li class="menu-items">
+                        <asp:HyperLink CssClass="menu" ID="LinkNganhHoc" runat="server" NavigateUrl="NganhHoc.aspx">Ngành học</asp:HyperLink>
+                    </li>
+                    <li class="menu-items">
+                        <asp:HyperLink CssClass="menu" ID="LinkKhoaHoc" runat="server" NavigateUrl="KhoaHoc.aspx">Khóa học</asp:HyperLink>
+                    </li>
+                    <li class="menu-items">
+                        <asp:HyperLink CssClass="menu" ID="LinkLop" runat="server" NavigateUrl="Lop.aspx">Lớp học</asp:HyperLink>
+                    </li>
+                    <li class="menu-items">
+                        <asp:HyperLink CssClass="menu" ID="LinkSinhVien" runat="server" NavigateUrl="SinhVien.aspx">Sinh viên</asp:HyperLink>
+                    </li>
+                    <li class="menu-items">
+                        <asp:HyperLink CssClass="menu" ID="LinkThongKe" runat="server" NavigateUrl="ThongKe.aspx">Thống kê</asp:HyperLink>
+                    </li>
+                    <li class="menu-items">
+                        <asp:HyperLink CssClass="menu" ID="LinkDangNhap" runat="server" NavigateUrl="QuanLyDangNhap.aspx">Quản lý đăng nhập</asp:HyperLink>
+                    </li>
+                    <li class="menu-items">
+                        <asp:HyperLink CssClass="menu" ID="HyperLink12" runat="server">Thông tin tài khoản</asp:HyperLink>
+                        <ul class="menu-main1">
+                            <li class="menu-items1">
+                                <asp:Label CssClass="menu" ID="lblTenDangNhap" runat="server"></asp:Label>
+                            </li>
+                            <li class="menu-items1">
+                                <asp:HyperLink CssClass="menu" ID="LinkDoiMatKhau" runat="server" NavigateUrl="DoiMatKhau.aspx">Đổi mật khẩu</asp:HyperLink>
+                            </li>
+                             <li class="menu-items1" style="border-top: 1px solid  #968a8a;">
+                                <asp:HyperLink CssClass="menu" ID="LinkDangXuat" runat="server" NavigateUrl="DangXuat.aspx">Đăng xuất</asp:HyperLink>
+                            </li>
+                        </ul>
+                    </li>
+            </ul>
+               </div>
+        </div>
+    <div style="display: flex; justify-content: center;">
+       
+        <form id="form1" runat="server" style=" justify-content: center; width: 80%; " >
+            <%-- Phần menu --%>
+
+            <%-- Phần thân --%>
+            <div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                
+                </asp:ContentPlaceHolder>
+            </div>
+            <br />
+            <%-- Phần chân --%>
+           
+        </form>
+        
+    </div>
+     <div class="chantrang" >
+            <div class="chantrang1" style="display: block; width: 50%;">
+                <asp:Label ID="Label2" runat="server" Text="Địa chỉ: 170 An Dương Vương, Tp.Quy Nhơn"></asp:Label><br />
+                <asp:Label ID="Label3" runat="server" Text="SĐT: (84-56) 3846156  ||  Fax: (84-56) 3846089"></asp:Label><br />
+                    
+            </div>
+            <div class="chantrang1" style="display: block; width: 50%; ">
+                <asp:Label ID="Label5" runat="server" Text="Email: "></asp:Label>
+                <asp:HyperLink CssClass="link" ID="HyperLink1" runat="server" NavigateUrl="dqn@moet.edu.vn">dqn@moet.edu.vn</asp:HyperLink><br />
+                <asp:Label ID="Label6" runat="server" Text="Website: "></asp:Label>
+                <asp:HyperLink CssClass="link" ID="HyperLink2" runat="server" NavigateUrl="http://www.qnu.edu.vn">http://www.qnu.edu.vn</asp:HyperLink>
+            </div>
+    </div>
+</body>
+</html>
